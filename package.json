@@ -1,0 +1,21 @@
+{
+  "name": "simple-books-api-tests",
+  "version": "1.0.0",
+  "description": "Playwright API tests for Simple Books API – GET, POST with token, PATCH, DELETE",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:api": "playwright test --project=api",
+    "test:smoke": "playwright test --grep @smoke",
+    "report": "npx playwright show-report",
+    "clean": "rimraf test-results playwright-report"
+  },
+  "keywords": ["playwright", "api-testing", "simple-books-api"],
+  "author": "Senior QA Engineer",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
